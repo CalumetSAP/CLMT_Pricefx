@@ -1,0 +1,13 @@
+{
+  "envs" : {
+    "DEV" : {
+      "calumet-dev" : "https://calumet-qa.pricefx.com/"
+    },
+    "PROD" : { },
+    "QA" : { }
+  },
+  "keepLabelsIntact" : false,
+  "keepUserGroups" : false,
+  "keepDataEntitlements" : false,
+  "suppressValidAfter" : false
+}

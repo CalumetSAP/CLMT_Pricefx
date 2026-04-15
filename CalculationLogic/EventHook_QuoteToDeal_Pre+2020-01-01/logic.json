@@ -1,0 +1,23 @@
+{
+  "elements" : [ {
+    "allowOverride" : false,
+    "combinationType" : "FUNCTION",
+    "displayOptions" : 0,
+    "elementGroups" : [ ],
+    "elementName" : "EventHook",
+    "elementTimeout" : 0,
+    "excludeFromExport" : false,
+    "hideOnNull" : false,
+    "hideWarnings" : false,
+    "overridden" : false,
+    "protectedExpression" : false,
+    "storeInAttributeExtension" : false,
+    "summarize" : false
+  } ],
+  "formulaNature" : "eventHook",
+  "inputDescriptors" : [ ],
+  "label" : "Event Hook Quote To Deal Pre",
+  "status" : "ACTIVE",
+  "uniqueName" : "EventHook_QuoteToDeal_Pre",
+  "validAfter" : "2020-01-01"
+}

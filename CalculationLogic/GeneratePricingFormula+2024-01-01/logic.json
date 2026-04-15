@@ -1,0 +1,37 @@
+{
+  "elements" : [ {
+    "allowOverride" : false,
+    "combinationType" : "FUNCTION",
+    "displayOptions" : 0,
+    "elementGroups" : [ ],
+    "elementName" : "GetMaterials",
+    "elementTimeout" : 0,
+    "excludeFromExport" : false,
+    "hideOnNull" : false,
+    "hideWarnings" : false,
+    "overridden" : false,
+    "protectedExpression" : false,
+    "storeInAttributeExtension" : false,
+    "summarize" : false
+  }, {
+    "allowOverride" : false,
+    "combinationType" : "FUNCTION",
+    "displayOptions" : 0,
+    "elementGroups" : [ ],
+    "elementName" : "GeneratePricelist",
+    "elementTimeout" : 0,
+    "excludeFromExport" : false,
+    "hideOnNull" : false,
+    "hideWarnings" : false,
+    "overridden" : false,
+    "protectedExpression" : false,
+    "storeInAttributeExtension" : false,
+    "summarize" : false
+  } ],
+  "formulaNature" : "calculationFlow",
+  "inputDescriptors" : [ ],
+  "label" : "Generate Pricing Formula",
+  "status" : "ACTIVE",
+  "uniqueName" : "GeneratePricingFormula",
+  "validAfter" : "2024-01-01"
+}

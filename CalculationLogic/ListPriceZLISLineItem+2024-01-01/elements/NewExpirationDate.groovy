@@ -1,0 +1,1 @@
+return api.attributedResult(api.global.expirationDate).withBackgroundColor(libs.PricelistLib.Colors.getEditableFieldColor())

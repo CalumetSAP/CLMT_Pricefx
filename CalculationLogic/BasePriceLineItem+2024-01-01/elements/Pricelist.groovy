@@ -1,0 +1,1 @@
+api.global.pricelists?.get(api.local.pricelist)

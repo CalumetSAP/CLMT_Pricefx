@@ -1,0 +1,1 @@
+api.global.customersNames?.get(out.ShipTo)

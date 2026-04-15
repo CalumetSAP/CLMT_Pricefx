@@ -1,0 +1,1 @@
+return out.LoadFreightConditionRecords && out.LoadConditionRecords ? "Condition Records" : "Quotes"

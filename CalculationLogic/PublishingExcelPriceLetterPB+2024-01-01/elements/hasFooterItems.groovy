@@ -1,0 +1,1 @@
+return out.footerMessages?.size() > 0

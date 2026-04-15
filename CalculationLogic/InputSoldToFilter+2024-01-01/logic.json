@@ -1,0 +1,24 @@
+{
+  "elements" : [ {
+    "allowOverride" : false,
+    "combinationType" : "FUNCTION",
+    "displayOptions" : 16,
+    "elementGroups" : [ ],
+    "elementLabel" : "Result Filter",
+    "elementName" : "ResultFilter",
+    "elementTimeout" : 900,
+    "excludeFromExport" : false,
+    "hideOnNull" : false,
+    "hideWarnings" : false,
+    "overridden" : false,
+    "protectedExpression" : false,
+    "storeInAttributeExtension" : false,
+    "summarize" : false
+  } ],
+  "formulaNature" : "customerInputFilter",
+  "inputDescriptors" : [ ],
+  "label" : "Input Sold To Filter",
+  "status" : "ACTIVE",
+  "uniqueName" : "InputSoldToFilter",
+  "validAfter" : "2024-01-01"
+}

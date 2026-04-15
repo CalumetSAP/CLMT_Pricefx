@@ -1,0 +1,51 @@
+{
+  "elements" : [ {
+    "allowOverride" : false,
+    "combinationType" : "FUNCTION",
+    "displayOptions" : 0,
+    "elementGroups" : [ ],
+    "elementName" : "FindPendingConditionRecords",
+    "elementTimeout" : 0,
+    "excludeFromExport" : false,
+    "hideOnNull" : false,
+    "hideWarnings" : false,
+    "overridden" : false,
+    "protectedExpression" : false,
+    "storeInAttributeExtension" : false,
+    "summarize" : false
+  }, {
+    "allowOverride" : false,
+    "combinationType" : "FUNCTION",
+    "displayOptions" : 0,
+    "elementGroups" : [ ],
+    "elementName" : "LoadConditionRecordSetMap",
+    "elementTimeout" : 0,
+    "excludeFromExport" : false,
+    "hideOnNull" : false,
+    "hideWarnings" : false,
+    "overridden" : false,
+    "protectedExpression" : false,
+    "storeInAttributeExtension" : false,
+    "summarize" : false
+  }, {
+    "allowOverride" : false,
+    "combinationType" : "FUNCTION",
+    "displayOptions" : 0,
+    "elementGroups" : [ ],
+    "elementName" : "CreateCustomEvents",
+    "elementTimeout" : 900,
+    "excludeFromExport" : false,
+    "hideOnNull" : false,
+    "hideWarnings" : false,
+    "overridden" : false,
+    "protectedExpression" : false,
+    "storeInAttributeExtension" : false,
+    "summarize" : false
+  } ],
+  "formulaNature" : "calculationFlow",
+  "inputDescriptors" : [ ],
+  "label" : "Populate Pending Condition Records",
+  "status" : "ACTIVE",
+  "uniqueName" : "PopulatePendingConditionRecords",
+  "validAfter" : "2024-01-01"
+}

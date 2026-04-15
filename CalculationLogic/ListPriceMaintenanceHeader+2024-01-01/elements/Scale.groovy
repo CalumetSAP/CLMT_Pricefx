@@ -1,0 +1,5 @@
+//return api.inputBuilderFactory()
+//        .createIntegerUserEntry("ScaleHeaderInput")
+//        .setLabel("Scale")
+//        .setReadOnly(false)
+//        .getInput()

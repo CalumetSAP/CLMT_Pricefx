@@ -1,0 +1,62 @@
+if (api.isInputGenerationExecution() || api.isDebugMode()) return
+
+final calculations = libs.PricelistLib.Calculations
+
+List<Object> processingPriceLists = calculations.getProcessingRowsForQuoteDS()
+if (!processingPriceLists) return
+
+def zbplPLIds = processingPriceLists.findAll { it.plType == libs.PricelistLib.Constants.PRICE_LIST_ZBPL_PL_TYPE }?.plId
+if (zbplPLIds) {
+    def ctx = api.getDatamartContext()
+    def query = ctx.newQuery(dist.resultTable, false)
+            .selectDistinct()
+            .select("UpdatedbyID", "UpdatedbyID")
+            .select("SAPContractNumber", "SAPContractNumber")
+            .select("uuid", "uuid")
+            .where(Filter.in("UpdatedbyID", zbplPLIds))
+
+    libs.QuoteLibrary.Calculations.addContractsUUIDs(ctx.executeQuery(query).getData())
+}
+
+final Map dataPayload = ["endRow"        : 1,
+                         "oldValues"     : null,
+                         "operationType" : "fetch",
+                         "startRow"      : 0,
+                         "textMatchStyle": "exact",
+                         "data"          : ["criteria"    : [["fieldName": "trackerType",
+                                                              "operator" : "equals",
+                                                              "value"    : "PADATALOAD"],
+                                                             ["fieldName": "status",
+                                                              "operator" : "equals",
+                                                              "value"    : "PROCESSING"],
+                                                             ["fieldName": "jobName",
+                                                              "operator" : "iContains",
+                                                              "value"    : "PriceListOutboundDDL"]],
+                                            "operator"    : "and",
+                                            "_constructor": "AdvancedCriteria"],
+                         "sortBy"        : ["-createDate"]]
+
+List data = api.boundCall('local', 'admin.fetchjst?dataLocale=en', api.jsonEncode(dataPayload), false)?.responseBody?.response?.data
+
+def jobId = data?.find()?.id
+def completedPricelists, errorPricelists
+if (!jobId) {
+    errorPricelists = []
+    completedPricelists = zbplPLIds
+} else {
+    final Map dataPayload2 = ["endRow"        : 300,
+                              "oldValues"     : null,
+                              "operationType" : "fetch",
+                              "startRow"      : 0,
+                              "textMatchStyle": "exact",
+                              "data"          : ["_constructor": "AdvancedCriteria",
+                                                 "operator"    : "and", "criteria": [["criteria": [["fieldName": "jstId", "operator": "equals", "value": jobId.toString()]], "operator": "and", "_constructor": "AdvancedCriteria"]]]]
+
+    List rows = api.boundCall('local', 'datamart.fetchcalcitems?dataLocale=en', api.jsonEncode(dataPayload2), false)?.responseBody?.response?.data
+
+    errorPricelists = rows?.findAll { it.status == "FAILED" }?.key2
+    completedPricelists = rows?.findAll { it.status == "COMPLETED" }?.key2
+}
+
+calculations.setPendingCustomEventStatus(completedPricelists)
+calculations.setErrorStatus(errorPricelists)

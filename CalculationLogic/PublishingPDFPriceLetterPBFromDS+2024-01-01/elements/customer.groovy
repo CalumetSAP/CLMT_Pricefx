@@ -1,0 +1,1 @@
+api.local.hasCustomer ? api.local.customer : api.local.buyingEntities

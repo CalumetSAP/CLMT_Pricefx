@@ -1,0 +1,22 @@
+{
+  "elements" : [ {
+    "combinationType" : "FUNCTION",
+    "elementName" : "Validation",
+    "elementTimeout" : 0,
+    "excludeFromExport" : false,
+    "hideWarnings" : false,
+    "protectedExpression" : false
+  }, {
+    "combinationType" : "FUNCTION",
+    "elementName" : "Workflow",
+    "elementTimeout" : 0,
+    "excludeFromExport" : false,
+    "hideWarnings" : false,
+    "protectedExpression" : false
+  } ],
+  "label" : "pricelist",
+  "status" : "ACTIVE",
+  "uniqueName" : "pricelist",
+  "validAfter" : "2024-01-01",
+  "workflowType" : "pricelist"
+}

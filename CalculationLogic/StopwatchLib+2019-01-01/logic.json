@@ -1,0 +1,24 @@
+{
+  "elements" : [ {
+    "allowOverride" : false,
+    "combinationType" : "FUNCTION",
+    "displayOptions" : 16,
+    "elementGroups" : [ ],
+    "elementLabel" : "Stopwatch",
+    "elementName" : "Stopwatch",
+    "elementTimeout" : 300,
+    "excludeFromExport" : false,
+    "hideOnNull" : false,
+    "hideWarnings" : false,
+    "overridden" : false,
+    "protectedExpression" : false,
+    "storeInAttributeExtension" : false,
+    "summarize" : false
+  } ],
+  "formulaNature" : "library",
+  "inputDescriptors" : [ ],
+  "label" : "Stopwatch for measuring logic performance",
+  "status" : "ACTIVE",
+  "uniqueName" : "StopwatchLib",
+  "validAfter" : "2019-01-01"
+}

@@ -1,0 +1,24 @@
+{
+  "elements" : [ {
+    "combinationType" : "FUNCTION",
+    "elementLabel" : "Quote Data",
+    "elementName" : "QuoteData",
+    "elementTimeout" : 0,
+    "excludeFromExport" : false,
+    "hideWarnings" : false,
+    "protectedExpression" : false
+  }, {
+    "combinationType" : "FUNCTION",
+    "elementLabel" : "Approval Steps",
+    "elementName" : "ApprovalSteps",
+    "elementTimeout" : 0,
+    "excludeFromExport" : false,
+    "hideWarnings" : false,
+    "protectedExpression" : false
+  } ],
+  "label" : "New Quote Agreement Workflow",
+  "status" : "ACTIVE",
+  "uniqueName" : "NewQuoteAgreementWorkflow",
+  "validAfter" : "2024-01-01",
+  "workflowType" : "quote"
+}

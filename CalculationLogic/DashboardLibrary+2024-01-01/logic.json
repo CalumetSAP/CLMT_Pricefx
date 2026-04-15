@@ -1,0 +1,39 @@
+{
+  "elements" : [ {
+    "allowOverride" : false,
+    "combinationType" : "FUNCTION",
+    "displayOptions" : 0,
+    "elementGroups" : [ ],
+    "elementLabel" : "Query",
+    "elementName" : "Query",
+    "elementTimeout" : 900,
+    "excludeFromExport" : false,
+    "hideOnNull" : false,
+    "hideWarnings" : false,
+    "overridden" : false,
+    "protectedExpression" : false,
+    "storeInAttributeExtension" : false,
+    "summarize" : false
+  }, {
+    "allowOverride" : false,
+    "combinationType" : "FUNCTION",
+    "displayOptions" : 0,
+    "elementGroups" : [ ],
+    "elementLabel" : "Calculations",
+    "elementName" : "Calculations",
+    "elementTimeout" : 900,
+    "excludeFromExport" : false,
+    "hideOnNull" : false,
+    "hideWarnings" : false,
+    "overridden" : false,
+    "protectedExpression" : false,
+    "storeInAttributeExtension" : false,
+    "summarize" : false
+  } ],
+  "formulaNature" : "library",
+  "inputDescriptors" : [ ],
+  "label" : "Dashboard Library",
+  "status" : "ACTIVE",
+  "uniqueName" : "DashboardLibrary",
+  "validAfter" : "2024-01-01"
+}
