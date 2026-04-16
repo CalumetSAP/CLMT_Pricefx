@@ -1,0 +1,24 @@
+{
+  "elements" : [ {
+    "allowOverride" : false,
+    "combinationType" : "FUNCTION",
+    "displayOptions" : 16,
+    "elementGroups" : [ ],
+    "elementLabel" : "Result Filter",
+    "elementName" : "ResultFilter",
+    "elementTimeout" : 0,
+    "excludeFromExport" : false,
+    "hideOnNull" : false,
+    "hideWarnings" : false,
+    "overridden" : false,
+    "protectedExpression" : false,
+    "storeInAttributeExtension" : false,
+    "summarize" : false
+  } ],
+  "formulaNature" : "productInputFilter",
+  "inputDescriptors" : [ ],
+  "label" : "Price Publishing Product Filter",
+  "status" : "ACTIVE",
+  "uniqueName" : "PricePublishingProductFilter",
+  "validAfter" : "2024-01-01"
+}

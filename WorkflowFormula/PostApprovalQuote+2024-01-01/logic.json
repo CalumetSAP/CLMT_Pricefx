@@ -1,0 +1,49 @@
+{
+  "elements" : [ {
+    "combinationType" : "FUNCTION",
+    "elementLabel" : "Init",
+    "elementName" : "Init",
+    "elementTimeout" : 0,
+    "excludeFromExport" : false,
+    "hideWarnings" : false,
+    "protectedExpression" : false
+  }, {
+    "combinationType" : "FUNCTION",
+    "elementLabel" : "Send Approved Email",
+    "elementName" : "SendApprovedEmail",
+    "elementTimeout" : 0,
+    "excludeFromExport" : false,
+    "hideWarnings" : false,
+    "protectedExpression" : false
+  }, {
+    "combinationType" : "FUNCTION",
+    "elementLabel" : "Update Expiry Date",
+    "elementName" : "UpdateExpiryDate",
+    "elementTimeout" : 0,
+    "excludeFromExport" : false,
+    "hideWarnings" : false,
+    "protectedExpression" : false
+  }, {
+    "combinationType" : "FUNCTION",
+    "elementLabel" : "Update Quote To Deal",
+    "elementName" : "UpdateQuoteToDeal",
+    "elementTimeout" : 0,
+    "excludeFromExport" : false,
+    "hideWarnings" : false,
+    "protectedExpression" : false
+  }, {
+    "combinationType" : "FUNCTION",
+    "elementLabel" : "Add Condition Records",
+    "elementName" : "AddConditionRecords",
+    "elementTimeout" : 0,
+    "excludeFromExport" : false,
+    "hideWarnings" : false,
+    "protectedExpression" : false
+  } ],
+  "formulaNature" : "wfStepLogic",
+  "label" : "Post Approval Quote",
+  "status" : "ACTIVE",
+  "uniqueName" : "PostApprovalQuote",
+  "validAfter" : "2024-01-01",
+  "workflowType" : "quote"
+}

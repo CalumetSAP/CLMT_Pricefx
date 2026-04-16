@@ -1,0 +1,16 @@
+{
+  "elements" : [ {
+    "combinationType" : "FUNCTION",
+    "elementName" : "Init",
+    "elementTimeout" : 0,
+    "excludeFromExport" : false,
+    "hideWarnings" : false,
+    "protectedExpression" : false
+  } ],
+  "formulaNature" : "wfStepLogic",
+  "label" : "DefaultPostStepLogic",
+  "status" : "ACTIVE",
+  "uniqueName" : "DefaultPostStepLogic",
+  "validAfter" : "2024-01-01",
+  "workflowType" : "pricelist"
+}

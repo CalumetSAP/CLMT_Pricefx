@@ -1,0 +1,1 @@
+return out.LoadQuotes.QuoteID+"|"+out.LoadQuotes.LineID+"|"+out.LoadQuotes.UpdatedbyID

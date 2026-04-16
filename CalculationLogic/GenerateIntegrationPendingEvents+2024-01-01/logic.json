@@ -1,0 +1,24 @@
+{
+  "elements" : [ {
+    "allowOverride" : false,
+    "combinationType" : "FUNCTION",
+    "displayOptions" : 0,
+    "elementGroups" : [ ],
+    "elementLabel" : "Find Pending Email Sent",
+    "elementName" : "FindPendingEmailSent",
+    "elementTimeout" : 900,
+    "excludeFromExport" : false,
+    "hideOnNull" : false,
+    "hideWarnings" : false,
+    "overridden" : false,
+    "protectedExpression" : false,
+    "storeInAttributeExtension" : false,
+    "summarize" : false
+  } ],
+  "formulaNature" : "calculationFlow",
+  "inputDescriptors" : [ ],
+  "label" : "Generate Integration Pending Events",
+  "status" : "ACTIVE",
+  "uniqueName" : "GenerateIntegrationPendingEvents",
+  "validAfter" : "2024-01-01"
+}

@@ -1,0 +1,5 @@
+if (api.isInputGenerationExecution()) return
+
+return api.find("CRCS", 0, api.getMaxFindResultsLimit(), null, ["uniqueName", "id"])?.collectEntries {
+    [(it.uniqueName): it.id]
+} ?: [:]

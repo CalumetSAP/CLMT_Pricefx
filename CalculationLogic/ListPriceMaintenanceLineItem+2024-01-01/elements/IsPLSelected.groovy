@@ -1,0 +1,1 @@
+if (api.local.pricelist) true else false

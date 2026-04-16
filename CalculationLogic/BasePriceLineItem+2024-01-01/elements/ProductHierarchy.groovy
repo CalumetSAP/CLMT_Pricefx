@@ -1,0 +1,1 @@
+return api.global.products?.get(api.local.material)?.ProductHierarchy

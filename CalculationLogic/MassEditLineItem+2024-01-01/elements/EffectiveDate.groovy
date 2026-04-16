@@ -1,0 +1,1 @@
+return api.attributedResult(out.CalculateEffectiveDate).withBackgroundColor(libs.PricelistLib.Colors.getEditableFieldColor())

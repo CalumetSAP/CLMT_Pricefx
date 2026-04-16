@@ -1,0 +1,2 @@
+if(out.NumberOfGallon?.toBigDecimal() && out.NewJobberPrice?.toBigDecimal() != null && out.JobberDealerPrice?.toBigDecimal() != null)
+    return (out.NewJobberPrice - out.JobberDealerPrice) / out.NumberOfGallon

@@ -1,0 +1,1 @@
+return api.attributedResult(out.ZBPLMerged?.Per ?: 1).withBackgroundColor(libs.PricelistLib.Colors.getEditableFieldColor())
