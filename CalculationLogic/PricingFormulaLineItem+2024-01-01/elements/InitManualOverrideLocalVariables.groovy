@@ -24,9 +24,11 @@ def index1PercentOverride = api.getManualOverride("Index1Percent")
 def index2PercentOverride = api.getManualOverride("Index2Percent")
 def index3PercentOverride = api.getManualOverride("Index3Percent")
 BigDecimal indexPercent = indexQty ? 1/indexQty : 0
+// Added by suganya CAL 714 : Index calculation fix - CHG0044883 - START
 BigDecimal index1Percent = quotesRow?.IndexNumberOnePercent?.toBigDecimal() ?: indexPercent
 BigDecimal index2Percent = quotesRow?.IndexNumberTwoPercent?.toBigDecimal() ?: indexPercent
 BigDecimal index3Percent = quotesRow?.IndexNumberThreePercent?.toBigDecimal() ?: indexPercent
+// Added by suganya CAL 714 : Index calculation fix - CHG0044883 - END
 api.local.index1Percent = index1 ? (index1PercentOverride != null ? index1PercentOverride : index1Percent) : BigDecimal.ZERO
 api.local.index2Percent = index2 ? (index2PercentOverride != null ? index2PercentOverride : index2Percent) : BigDecimal.ZERO
 api.local.index3Percent = index3 ? (index3PercentOverride != null ? index3PercentOverride : index3Percent) : BigDecimal.ZERO
