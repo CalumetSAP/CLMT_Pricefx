@@ -1,0 +1,22 @@
+{
+  "elements" : [ {
+    "allowOverride" : false,
+    "combinationType" : "FUNCTION",
+    "displayOptions" : 0,
+    "elementGroups" : [ "init" ],
+    "elementName" : "Process",
+    "elementTimeout" : 900,
+    "excludeFromExport" : false,
+    "hideOnNull" : false,
+    "hideWarnings" : false,
+    "overridden" : false,
+    "protectedExpression" : false,
+    "summarize" : false
+  } ],
+  "formulaNature" : "paDataLoad",
+  "inputDescriptors" : [ ],
+  "label" : "SAP Quotes To Quotes",
+  "status" : "ACTIVE",
+  "uniqueName" : "SAPQuotesToQuotes",
+  "validAfter" : "2024-01-01"
+}

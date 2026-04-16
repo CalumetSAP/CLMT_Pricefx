@@ -1,0 +1,1 @@
+return libs.SharedLib.RoundingUtils.round(out.LoadRailRateUploadPX.Distance, 0)

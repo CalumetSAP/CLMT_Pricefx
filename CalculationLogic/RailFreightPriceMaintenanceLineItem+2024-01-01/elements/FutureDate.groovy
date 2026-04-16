@@ -1,0 +1,1 @@
+return out.OldPriceValidFrom > api.global.effectiveDate ? "Y" : null

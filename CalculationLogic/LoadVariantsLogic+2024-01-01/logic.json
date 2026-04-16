@@ -1,0 +1,22 @@
+{
+  "elements" : [ {
+    "allowOverride" : false,
+    "combinationType" : "FUNCTION",
+    "displayOptions" : 0,
+    "elementGroups" : [ ],
+    "elementLabel" : "Load Variants",
+    "elementName" : "LoadVariants",
+    "elementTimeout" : 0,
+    "excludeFromExport" : false,
+    "hideOnNull" : false,
+    "hideWarnings" : false,
+    "overridden" : false,
+    "protectedExpression" : false,
+    "summarize" : false
+  } ],
+  "inputDescriptors" : [ ],
+  "label" : "Load Variants Logic",
+  "status" : "ACTIVE",
+  "uniqueName" : "LoadVariantsLogic",
+  "validAfter" : "2024-01-01"
+}

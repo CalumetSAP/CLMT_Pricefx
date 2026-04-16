@@ -1,0 +1,1 @@
+return out.CondType == "ZCSP" ? out.LoadExclusions?.attribute1 : null

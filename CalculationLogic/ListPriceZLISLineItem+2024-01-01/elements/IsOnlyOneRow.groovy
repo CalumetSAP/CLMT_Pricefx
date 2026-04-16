@@ -1,0 +1,1 @@
+return api.global.currentBatch?.size() == 1

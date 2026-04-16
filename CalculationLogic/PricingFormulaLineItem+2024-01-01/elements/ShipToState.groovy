@@ -1,0 +1,1 @@
+api.global.customersData[out.ShipTo]?.attribute7

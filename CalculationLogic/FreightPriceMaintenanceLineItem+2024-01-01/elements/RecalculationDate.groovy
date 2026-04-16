@@ -1,0 +1,1 @@
+return out.CondType == "ZPFX" ? out.LoadQuotes.RecalculationDate : null

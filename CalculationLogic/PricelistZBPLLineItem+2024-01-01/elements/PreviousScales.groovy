@@ -1,0 +1,17 @@
+
+def scaleQtyAux, priceAux
+def scales = []
+
+for (int i = 0; i < 5; i++) {
+    scaleQtyAux = out.ZBPLMerged.Scales?.getAt(i)?.ScaleQuantity
+    priceAux = out.ZBPLMerged.Scales?.getAt(i)?.ConditionRate
+    if (scaleQtyAux && priceAux) {
+        scales.add([
+                scaleQty: scaleQtyAux,
+                price: priceAux
+        ])
+    }
+}
+
+scales.sort { it.scaleQty }
+return scales.collect { "${it.scaleQty}=${it.price}" }.join("|")
